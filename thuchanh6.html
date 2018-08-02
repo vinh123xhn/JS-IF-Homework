@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanh6</title>
+</head>
+<body>
+  <!--<script>
+    var oF, oC, doinhietdo;
+    doinhietdo = prompt("Đổi sang nhiệt độ gì",'');
+    if (doinhietdo == 'c') {
+      oF = prompt("Nhập độ F",'')
+      oC = (oF * 5)/9 - 32;
+      alert('nhiệt độ C là' + oC);}
+    if (doinhietdo == 'f') {
+       oC = prompt("Nhập độ C", '')
+      oF = (oC * 9)/5 + 32;
+        alert('nhiệt độ F là' +oF);
+    }
+  </script>
+  <script>
+    var feet, met, doichieudai;
+    doichieudai = prompt("đổi sang số đo nào",'');
+    switch (doichieudai) {
+      case 'F':
+      met = prompt("nhập số mét",'');
+        feet = met*3.2808;
+        alert("số Feet là" + feet);
+        break;
+      case 'M':
+      feet = prompt("nhập số feet",'');
+        met = feet / 3.2808;
+        alert("Số Meter là" + met);
+        break;
+    }
+  </script>
+  <script>
+    var Schunhat, a, b, chieudai;
+    chieudai = prompt("chiều dài là",'');
+    switch (chieudai) {
+      case 'A':
+        a = prompt("nhập A", '');
+        b = prompt("nhập B", '');
+        Schunhat = a * b;
+        alert("diện tích với a là cạnh dài " + Schunhat);
+        break;
+      case 'B':
+        a = prompt("nhập A", '');
+        b = prompt("nhập B", '');
+        Schunhat = a * b;
+        alert("diện tích với b là cạnh dài " + Schunhat);
+        break;
+    }
+  </script>
+  <script>
+    var a, b, x;
+    a = prompt("Nhập a",'');
+    if (a == 0){
+      alert("không có nghiệm");
+    }
+    else {
+      b = prompt("Nhập b",'');
+      x = -b / a;
+      alert("nghiệm là" + x);
+    }
+  </script>-->
+  <script>
+    //giải phương trình bậc 2
+    var a, b, c, delta, x1, x2;
+    a = prompt("nhập a",'');
+    b = prompt("nhập b",'');
+    c = prompt("nhập c", '');
+    delta = (b*b) - (4*a*c);
+    if (a == 0){
+      alert("đây không phải phương trình bậc 2 + vui lòng nhập a khác 0");
+    } else if (delta < 0) {
+      alert("vô nghiệm");
+    } else if (delta == 0){
+      x1 = -b/(2*a);
+      alert("nghiệm là" + x1);
+    } else {
+      x1 = (-b + Math.sqrt(delta)) / (2 * a);
+      x2 = (-b - Math.sqrt(delta)) / (2 * a);
+      alert("nghiệm là" + x1);
+      alert("nghiệm là" + x2);
+    }
+  </script>
+</body>
+</html>
+
